@@ -1,36 +1,17 @@
-# 🧠 current-rice
+# 🧠 dotfiles
 
-This is my **current rice** setup as of the last push.  
-It will change **whenever I update my rice**.
+This has my **dotfiles** for my rices and setups.
 
 ---
 
 ## ⚠️ Important Notes
 
 - This config is **made for my machine**.
-- It works **on my setup** — Arch Linux, Hyprland, Wayland, etc.
+- It works **on my setup**.
 - It may **not** work on your system without changes.
 
 If you try to use this and something breaks,  
 👉 **open an issue** and I’ll try to help or clarify.
-
----
-
-## 🛠️ What's Included
-
-- Zsh config
-- Btop config
-- Hyprland config
-- Kitty config
-- lazygit config
-- Nemo config config
-- NeoVim config config
-- Sherlock config
-- Swaylock config
-- Tmux config
-- Waybar config
-- Yazi config
-- Ly config
 
 ---
 

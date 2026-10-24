@@ -1,0 +1,90 @@
+{
+  "modules-left": [
+    "ext/workspaces",
+    "custom/sep",
+    "dwl/window#layout",
+    "custom/sep",
+    "pulseaudio",
+    "custom/sep",
+    "custom/brightnessctl"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "custom/sep",
+    "battery",
+    "custom/sep",
+    "network",
+    "custom/sep",
+    "cpu",
+    "custom/sep",
+    "memory",
+    "custom/sep",
+    "disk"
+  ],
+
+  "clock": {
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "cpu": {
+    "format": "CPU: {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "Mem: {used}GiB"
+  },
+  "disk": {
+    "interval": 60,
+    "path": "/",
+    "format": "Disk: {free}"
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "Bat {capacity}%",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "network": {
+    "format": "Online",
+    "format-disconnected": "Disconnected ⚠"
+  },
+  "ext/workspaces": {
+    "format": "{icon}",
+    "ignore-hidden": true,
+    "on-click": "activate",
+    "sort-by-id": true
+  },
+  "dwl/tags": {
+    "num-tags": 9
+  },
+  "dwl/window#layout": {
+    "format": "[{layout}]"
+  },
+  "dwl/window#title": {
+    "format": "{title}"
+  },
+  "custom/sep": {
+    "format": "|",
+    "interval": 0
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " muted",
+    "format-icons": {
+      "default": ["", "", ""]
+    }
+  },
+  "custom/brightnessctl": {
+    "format": "☀️{}",
+    "exec": "brightnessctl -m | cut -d, -f4",
+    "interval": 0,
+    "return-type": "text"
+}
+
+}
